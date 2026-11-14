@@ -35,6 +35,10 @@ Try the syntax in your browser at [try.archimaid.org](https://try.archimaid.org)
 
 `skills/archimaid/references/reference.md` and `skills/archimaid/examples/` are copied from the [archimaid](https://github.com/Archimaid/archimaid) package. Update them when a release changes the catalogue or the syntax, and bump `version` in `.claude-plugin/plugin.json`.
 
+## Privacy
+
+The plugin collects no data and has no hooks, MCP servers or telemetry. See the [privacy policy](https://archimaid.org/privacy).
+
 ## Licence
 
 MIT. ArchiMate® is a registered trademark of The Open Group. Archimaid is an independent project, not affiliated with or endorsed by The Open Group.
