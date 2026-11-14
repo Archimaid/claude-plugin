@@ -1,6 +1,6 @@
 # Archimaid plugin for Claude Code
 
-Write ArchiMate® 3.2 diagrams as text with Claude. This plugin teaches Claude Code the [Archimaid](https://archimaid.org) `archimate-beta` Mermaid syntax and checks every diagram it writes.
+Write ArchiMate® 3.2 diagrams as text with Claude. This plugin teaches Claude Code the [Archimaid](https://archimaid.org) `archimate-beta` Mermaid syntax and has it validate every diagram it writes.
 
 ## Install
 
@@ -9,7 +9,7 @@ Write ArchiMate® 3.2 diagrams as text with Claude. This plugin teaches Claude C
 /plugin install archimaid@archimaid
 ```
 
-You need Node.js 22.12 or later. The plugin runs the `archimaid` CLI from your project's `node_modules` if it's installed there, and from `npx` otherwise.
+You need Node.js 22.12 or later. Claude validates diagrams with `npx archimaid validate`, which uses the version in your project if `archimaid` is installed there.
 
 ## What you get
 
@@ -18,7 +18,6 @@ You need Node.js 22.12 or later. The plugin runs the `archimaid` CLI from your p
 | `archimaid` skill | Syntax, all 60 element types and 11 relationship types, layouts, nesting, notes, links and rendering. Claude loads it when you ask for an ArchiMate or enterprise architecture diagram. |
 | `/archimaid:diagram <description> [path]` | Drafts a diagram from a description, using names from your codebase, and validates it. |
 | `/archimaid:validate [paths]` | Validates `.mmd` files and Markdown `mermaid` blocks, then fixes the errors. |
-| Validation hook | After Claude writes or edits a `.mmd`, `.mermaid` or Markdown file that contains `archimate-beta`, it runs `archimaid validate` and sends any errors back to Claude to fix. |
 
 ## Example
 
