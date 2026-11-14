@@ -1,0 +1,17 @@
+{
+  "description": "Validate archimate-beta diagrams after Claude writes or edits them",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/validate-diagram.mjs\"",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  }
+}

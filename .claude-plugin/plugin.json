@@ -1,0 +1,14 @@
+{
+  "name": "archimaid",
+  "displayName": "Archimaid",
+  "version": "0.1.0",
+  "description": "Write, validate and render ArchiMate® 3.2 diagrams as Mermaid text with Archimaid. Adds a skill, /archimaid:diagram and /archimaid:validate commands, and automatic validation after edits.",
+  "author": {
+    "name": "Archimaid",
+    "url": "https://archimaid.org"
+  },
+  "homepage": "https://archimaid.org",
+  "repository": "https://github.com/Archimaid/claude-plugin",
+  "license": "MIT",
+  "keywords": ["archimate", "mermaid", "enterprise-architecture", "diagrams-as-code", "architecture-diagrams"]
+}
