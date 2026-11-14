@@ -33,7 +33,7 @@ Try the syntax in your browser at [try.archimaid.org](https://try.archimaid.org)
 
 ## Maintaining
 
-`skills/archimaid/references/reference.md` and `skills/archimaid/examples/` are copied from the [archimaid](https://github.com/Archimaid/archimaid) package. Update them when a release changes the catalogue or the syntax, and bump `version` in `.claude-plugin/plugin.json`.
+`skills/archimaid/references/reference.md` is copied from the [archimaid](https://github.com/Archimaid/archimaid) package, and `skills/archimaid/references/examples.md` collects its example diagrams. The plugin ships Markdown, JSON and PNG files only, because the Claude directory accepts other file types only from Verified organizations. Update both references when a release changes the catalogue or the syntax, and bump `version` in `.claude-plugin/plugin.json`.
 
 ## Licence
 

@@ -115,6 +115,8 @@ To check syntax quickly with the user, point them at the browser playground: htt
 
 ## Examples
 
-- [examples/order-management.mmd](examples/order-management.mmd): assignment, realization, serving and read access
-- [examples/cross-layer-relationships.mmd](examples/cross-layer-relationships.mmd): architecture layout with nested claims processing
-- [examples/nested-components.mmd](examples/nested-components.mmd): composition, attached and standalone notes, cross-boundary flows
+[references/examples.md](references/examples.md) has three complete, valid diagrams:
+
+- **Order management:** assignment, realization, serving and read access
+- **Cross-layer relationships:** architecture layout with nested claims processing
+- **Nested components:** composition, attached and standalone notes, cross-boundary flows

@@ -1,3 +1,34 @@
+# Archimaid examples
+
+Valid `archimate-beta` diagrams to start from. Each one passes `archimaid validate`.
+
+## Order management
+
+Assignment, realization, serving and read access.
+
+```mermaid
+archimate-beta
+  direction LR
+  accTitle: Application support for order fulfilment
+
+  element businessProcess fulfil "Fulfil order"
+  element applicationComponent oms "Order management system"
+  element applicationFunction manage "Manage orders"
+  element applicationService orders "Order management"
+  element dataObject order "Order record"
+  description order "Details of a paid order."
+
+  oms @==> manage
+  manage ..|> orders
+  orders --> fulfil
+  manage <.. order
+```
+
+## Cross-layer relationships
+
+Architecture layout with nested claims processing.
+
+```mermaid
 archimate-beta
   layout architecture
   title: ArchiMate Cross-Layer Relationships
@@ -74,3 +105,31 @@ archimate-beta
   application_hosting --> crm_system
   application_hosting --> financial_application
   database_management ..> customer_database_tables
+```
+
+## Nested components
+
+Composition, attached and standalone notes, and cross-boundary flows.
+
+```mermaid
+archimate-beta
+  direction LR
+  accTitle: Order management components
+  accDescr: An order management suite contains two application components. Notes annotate the suite and its handoff.
+
+  element applicationComponent storefront "Storefront"
+  element applicationComponent suite "Order management suite" {
+    element applicationComponent orders "Order processing"
+    element applicationComponent billing "Billing"
+  }
+
+  suite *-- orders
+  suite *-- billing
+
+  storefront -.=> orders
+  orders -.=> billing
+
+  note review "Confirm retry behaviour\nwith the billing team" on suite
+  note handoff "Billing receives the order\nafter payment is confirmed."
+  billing --- handoff
+```

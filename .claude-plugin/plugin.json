@@ -1,7 +1,7 @@
 {
   "name": "archimaid",
   "displayName": "Archimaid",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Write, validate and render ArchiMate® 3.2 diagrams as Mermaid text with Archimaid. Adds a skill and the /archimaid:diagram and /archimaid:validate commands.",
   "author": {
     "name": "Archimaid",
