@@ -35,6 +35,10 @@ Try the syntax in your browser at [try.archimaid.org](https://try.archimaid.org)
 
 `skills/archimaid/references/reference.md` is copied from the [archimaid](https://github.com/Archimaid/archimaid) package, and `skills/archimaid/references/examples.md` collects its example diagrams. The plugin ships Markdown, JSON and PNG files only, because the Claude directory accepts other file types only from Verified organizations. Update both references when a release changes the catalogue or the syntax, and bump `version` in `.claude-plugin/plugin.json`.
 
+## Privacy
+
+The plugin collects no data and has no hooks, MCP servers or telemetry. See the [privacy policy](https://archimaid.org/privacy).
+
 ## Licence
 
 MIT. ArchiMate® is a registered trademark of The Open Group. Archimaid is an independent project, not affiliated with or endorsed by The Open Group.
